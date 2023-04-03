@@ -2,12 +2,29 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "1. The bulk density depends on __________",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Density of powder particle",
+        "b": "Volume of powder particle",
+        "c": "Spatial arrangement of particle",
+        "d": "Both a and c"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. The tapped density is calculated by using the formula:",
+      "answers": {
+        "a": "mass/ Final Volume",
+        "b": "mass× Final Volume",
+        "c": "Initial volume- Final Volume",
+        "d": "Initial Volume/ Final Volume"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -19,12 +36,29 @@
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "3. Order of number of taps carried out on the same powder sample (USP Method 1)",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "10, 100 and 1250",
+        "b": "10, 500 and 1250",
+        "c": "100, 500 and 1250",
+        "d": "100, 750 and 1250"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. Which density is not an intrinsic property of a material?",
+      "answers": {
+        "a": "Tapped density",
+        "b": "True density",
+        "c": "Bulk density",
+        "d": "Relative density"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
