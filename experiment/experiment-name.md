@@ -1,1 +1,1 @@
-## Bulk Density and Tapped Density Determination of Pharmaceutical Powders
+## Determination of Bulk Density and Tapped Density of Pharmaceutical Powders Using Digital Bulk Density Apparatus
