@@ -48,14 +48,12 @@ Flow Characterization: Passable flow (based on HR = 1.301 and CI = 23.2%).<br>
 <b>Results and Discussion:</b><br>
 Different powders exhibit variable bulk and tapped densities due to differences in particle size, shape, moisture content, and surface characteristics.<br>
 
-Typical Density Ranges:<br>
-
+<b>Typical Density Ranges:</b><br>
 Calcium Carbonate: 0.4–0.6 (bulk), 0.6–0.8 (tapped)<br>
 Lactose Monohydrate: 0.5–0.7 (bulk), 0.7–0.9 (tapped)<br>
 Microcrystalline Cellulose: 0.3–0.4 (bulk), 0.4–0.6 (tapped)<br>
 
-Factors Affecting Results:<br>
-
+<b>Factors Affecting Results:</b><br>
 ● Particle size and shape<br>
 ● Surface texture and electrostatic charge<br>
 ● Moisture content<br>
