@@ -23,7 +23,7 @@
 ● Calculate Carr’s Index = [(Tapped Density - Bulk Density) / Tapped Density] × 100.<br>
 ● Record results and compute mean and standard deviation for replicate trials.<br>
 
-<b>Sample Data Table:</b><br>
+<!--<b>Sample Data Table:</b><br>
 
 | **Parameter** | **Trial 1** | **Trial 2** | **Trial 3** | **Mean** | **Std. Dev** |
 |----------------|-------------|-------------|-------------|-----------|--------------|
