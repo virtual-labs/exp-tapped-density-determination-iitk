@@ -2,71 +2,88 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "1. The bulk density depends on __________",
+      "question": "1. The formula for Carr’s Index (CI) is:",
       "answers": {
-        "a": "Density of powder particle",
-        "b": "Volume of powder particle",
-        "c": "Spatial arrangement of particle",
-        "d": "Both a and c"
+        "a": "(Tapped Density / Bulk Density) × 100",
+        "b": "(Bulk Density / Tapped Density) × 100",
+        "c": "[(Tapped Density – Bulk Density) / Tapped Density] × 100",
+        "d": "[(Bulk Density – Tapped Density) / Bulk Density] × 100"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Explanation",
+        "b": "Explanation",
+        "c": "Explanation",
+        "d": "Explanation"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
-    {
-      "question": "2. The tapped density is calculated by using the formula:",
+       {
+      "question": "2. If Hausner Ratio > 1.25, it indicates:",
       "answers": {
-        "a": "mass/ Final Volume",
-        "b": "mass× Final Volume",
-        "c": "Initial volume- Final Volume",
-        "d": "Initial Volume/ Final Volume"
+        "a": "Poor flowability of the powder",
+        "b": "Excellent flowability",
+        "c": "Uniform particle size",
+        "d": "Low compressibility"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Explanation",
+        "b": "Explanation",
+        "c": "Explanation",
+        "d": "Explanation"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
-    {
-      "question": "3. Order of number of taps carried out on the same powder sample (USP Method 1)",
+        {
+      "question": "3. When the difference between two consecutive tapped volumes is less than 2%:",
       "answers": {
-        "a": "10, 100 and 1250",
-        "b": "10, 500 and 1250",
-        "c": "100, 500 and 1250",
-        "d": "100, 750 and 1250"
+        "a": "Tapping should continue",
+        "b": "Tapping can be stopped as constant volume is achieved",
+        "c": "Sample should be replaced",
+        "d": "Cylinder should be refilled"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Explanation",
+        "b": "Explanation",
+        "c": "Explanation",
+        "d": "Explanation"
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
-    {
-      "question": "4. Which density is not an intrinsic property of a material?",
+        {
+      "question": "4. A powder has a bulk density of 0.5 g/mL and tapped density of 0.65 g/mL. Its Hausner Ratio is:",
       "answers": {
-        "a": "Tapped density",
-        "b": "True density",
-        "c": "Bulk density",
-        "d": "Relative density"
+        "a": "1.15",
+        "b": "1.30",
+        "c": "0.77",
+        "d": "1.50"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Explanation",
+        "b": "Explanation",
+        "c": "Explanation",
+        "d": "Explanation"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+        {
+      "question": "5. One of the major factors affecting bulk and tapped density results is:",
+      "answers": {
+        "a": "Color of the powder",
+        "b": "Particle size and shape",
+        "c": "Odor of the powder",
+        "d": "Storage container material"
+      },
+      "explanations": {
+        "a": "Explanation",
+        "b": "Explanation",
+        "c": "Explanation",
+        "d": "Explanation"
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
