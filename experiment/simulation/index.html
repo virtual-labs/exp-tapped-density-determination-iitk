@@ -32,15 +32,8 @@
       <div class="instruction-box" id="instructionText">
         Welcome to the Bulk Density Simulation!
       </div>
-      <div class="language-select-container">
-        <select id="languageSelect" class="language-select" onchange="changeLanguage(this.value)">
-          <option value="en">English</option>
-          <option value="hi">हिंदी</option>
-          <option value="bn">বাংলা</option>
-          <option value="gu">ગુજરાતી</option>
-          <option value="ml">മലയാളം</option>
-          <option value="ta">தமிழ்</option>
-        </select>
+      <div class="start-btn-container">
+        <button class="start-btn" id="startSimulationBtn" title="Click to start the simulation">Start Simulation</button>
       </div>
     </div>
 
@@ -68,16 +61,16 @@
           <div class="sample-name">
             <h1>Calcium Carbonate (CaCO₃)</h1>
           </div>
-          <img src="bottom machine.png" alt="" class="bulk-machine">
-          <img src="weight machine.png" alt="" class="weighing-scale">
-          <img src="tapped chemical powder.png" alt="" class="chemical-powder1">
-          <img src="tapped chemical powder.png" alt="" class="chemical-powder2">
-          <img src="tapping equipment.png" class="tapping-equipment" alt="">
-          <img src="tapping equipment.png" class="tapping-equipment" id="tapping-equipment2" alt="">
-          <img src="test tube.png" class="test-tube" alt="">
-          <img src="test tube.png" class="test-tube" alt="" id="test-tube2">
-          <img src="chemical powder cap.png" class="chemical-powder-cap" alt="">
-          <img src="calcium carbonate box.png" class="calcium-carbonate-box" alt="">
+          <img src="bottom machine.png" alt="Bulk Machine" class="bulk-machine" title="Bulk Density Tapping Machine">
+          <img src="weight machine.png" alt="Weighing Scale" class="weighing-scale" title="Digital Weighing Scale">
+          <img src="tapped chemical powder.png" alt="Chemical Powder" class="chemical-powder1" title="Chemical Powder in Test Tube 1">
+          <img src="tapped chemical powder.png" alt="Chemical Powder" class="chemical-powder2" title="Chemical Powder in Test Tube 2">
+          <img src="tapping equipment.png" class="tapping-equipment" alt="Tapping Equipment" title="Tapping Equipment for Test Tube 1">
+          <img src="tapping equipment.png" class="tapping-equipment" id="tapping-equipment2" alt="Tapping Equipment" title="Tapping Equipment for Test Tube 2">
+          <img src="test tube.png" class="test-tube" alt="Test Tube" title="Test Tube 1">
+          <img src="test tube.png" class="test-tube" alt="Test Tube" id="test-tube2" title="Test Tube 2">
+          <img src="chemical powder cap.png" class="chemical-powder-cap" alt="Powder Cap" title="Click to open the powder container cap">
+          <img src="calcium carbonate box.png" class="calcium-carbonate-box" alt="Chemical Powder Box" title="Chemical Powder Container">
 
           <!-- Powder samples that will be collected -->
           <div class="powder-samples-container">
@@ -110,17 +103,17 @@
 
 
 
-          <img class="spatchula" src="spatula.png" alt="">
-          <img src="petridish.png" class="petridish" alt="Petri Dish">
+          <img class="spatchula" src="spatula.png" alt="Spatula" title="Click to collect powder sample with spatula">
+          <img src="petridish.png" class="petridish" alt="Petri Dish" title="Click to place petri dish on weighing scale">
 
           <!-- Digital Display for Bulk Machine -->
-          <button id="startTappingBtn" class="start-tapping-btn">START</button>
-          <div class="bulk-machine-display" id="bulkMachineDisplay">0</div>
+          <button id="startTappingBtn" class="start-tapping-btn" title="Click to start the tapping process">START</button>
+          <div class="bulk-machine-display" id="bulkMachineDisplay" title="Tap count display">0</div>
 
 
-            <button class="weighing-btn" id="onButton">ON</button>
-            <div class="weight-display" id="weightDisplay">0.00</div>
-            <button class="weighing-btn" id="tareButton">TARE</button>
+            <button class="weighing-btn" id="onButton" title="Click to turn ON the weighing scale">ON</button>
+            <div class="weight-display" id="weightDisplay" title="Weight display in grams">0.00</div>
+            <button class="weighing-btn" id="tareButton" title="Click to tare (zero) the weighing scale">TARE</button>
 
 
         </div>
@@ -129,9 +122,11 @@
 
     <!-- Bottom Panel -->
     <div class="bottom-panel">
-      <div class="step-counter" id="stepCounter">Step 0</div>
-      <button class="start-btn" id="startSimulationBtn">Start Simulation</button>
+      <!-- Step counter removed - button moved to top panel -->
     </div>
+
+    <!-- Hover Label for showing element names -->
+    <div id="hoverLabel" class="hover-label"></div>
 
     <!-- Starting Popup Modal -->
     <div class="start-popup" id="startPopup">
@@ -139,7 +134,7 @@
         <h2>Simulation Settings</h2>
         <div class="popup-item">
           <label for="chemicalSelect">Chemical / Powder Selection:</label>
-          <select id="chemicalSelect">
+          <select id="chemicalSelect" title="Select the chemical powder for the experiment">
             <option value="calcium-carbonate">Calcium Carbonate (CaCO₃)</option>
             <option value="talc">Talc</option>
             <option value="lactose-monohydrate">Lactose Monohydrate</option>
@@ -154,7 +149,7 @@
         </div>
         <div class="popup-item">
           <label for="popupSampleWeight">Sample Weight (gm):</label>
-          <select id="popupSampleWeight">
+          <select id="popupSampleWeight" title="Select the sample weight in grams">
             <option value="50">50</option>
             <option value="100">100</option>
             <option value="150">150</option>
@@ -164,7 +159,7 @@
         </div>
         <div class="popup-item">
           <label for="popupTapCount">Number of Taps:</label>
-          <select id="popupTapCount">
+          <select id="popupTapCount" title="Select the number of taps for the tapping process">
             <option value="10">10</option>
             <option value="50">50</option>
             <option value="100">100</option>
@@ -174,7 +169,7 @@
           </select>
         </div>
         <div class="popup-buttons">
-          <button id="startOkBtn">OK</button>
+          <button id="startOkBtn" title="Click to confirm settings and start">OK</button>
         </div>
       </div>
     </div>
@@ -192,5 +187,6 @@
   <script src="tapping.js"></script>
   <script src="json-results-handler.js"></script>
   <script src="rotate-screen.js"></script>
+  <script src="hover-labels.js"></script>
 </body>
 </html>

@@ -52,28 +52,9 @@
 
   /* Removed hover effect */
 
-  .language-select-container {
+  .start-btn-container {
     padding: 5px;
     position: relative;
-  }
-
-  .language-select {
-    width: 150px;
-    padding: 10px;
-    border: 1px solid #adb0b0;
-    border-radius: 5px;
-    font-size: 16px;
-    background-color: #f9f9f9;
-    cursor: pointer;
-    color: #000000;
-    font-weight: 500;
-    appearance: menulist; /* Show the dropdown arrow */
-  }
-
-  .language-select:focus {
-    outline: none;
-    border-color: #4CAF50;
-    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
   }
 
   .main-content {
@@ -360,6 +341,7 @@
     color: white;
     font-size: 18px;
     font-weight: 600;
+    display: inline-block;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
   }
@@ -388,6 +370,26 @@
     background: #1976D2;
   }
 
+  /* Hover Label Styles */
+  .hover-label {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    pointer-events: none;
+    z-index: 10000;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    white-space: nowrap;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .hover-label.show {
+    opacity: 1;
+  }
 
   @keyframes typing {
     from { width: 0; }
@@ -586,3 +588,20 @@
 
 /* } */
 
+
+@media  (max-height: 725px) {
+  .chemical-powder-cap{
+   bottom:31.5%;
+  }
+  .test-tube, #test-tube2{
+    bottom: 35%;
+  }
+  .tapping-equipment, #tapping-equipment2{
+    bottom: 30%;
+  }
+}
+@media  (max-height: 680px) {
+  .chemical-powder-cap{
+   bottom:33%;
+  }
+}
