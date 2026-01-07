@@ -1,1 +1,1 @@
-### Aim of the experiment
+To determine the bulk density and tapped density of pharmaceutical powder samples using a digital bulk density apparatus, and to calculate the Hausner ratio and Carr’s index for flow characterization.

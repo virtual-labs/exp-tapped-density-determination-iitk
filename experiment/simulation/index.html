@@ -1,13 +1,192 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
+  <meta charset="UTF-8">
+  <title>VLab Simulation</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script>
+    // Create an AudioContext to enable audio playback
+    window.addEventListener('DOMContentLoaded', function() {
+      const AudioContext = window.AudioContext || window.webkitAudioContext;
+      if (AudioContext) {
+        window.audioContext = new AudioContext();
+      }
+    });
+  </script>
 </head>
 <body>
-		<!-- Your code goes here-->
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+  <div class="rotate-container">
+    <div class="rotate-message">
+      <p>Please rotate your device to landscape mode for the best experience</p>
+      <button id="rotateButton">Rotate Screen</button>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <!-- Top Panel -->
+    <div class="top-panel">
+      <div class="instruction-box" id="instructionText">
+        Welcome to the Bulk Density Simulation!
+      </div>
+      <div class="start-btn-container">
+        <button class="start-btn" id="startSimulationBtn" title="Click to start the simulation">Start Simulation</button>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="measurements">
+        <h3 id="measurementTitle">Measurements</h3>
+        <label for="chemicalName" id="chemicalNameLabel">Chemical Name</label>
+        <input type="text" id="chemicalName" readonly>
+        <label for="sampleWeight" id="sampleWeightLabel">Sample Weight (g)</label>
+        <input type="text" id="sampleWeight" readonly>
+        <label for="bulkDensity" id="bulkLabel">Bulk Density</label>
+        <input type="text" id="bulkDensity" readonly>
+        <label for="tappedDensity" id="tappedLabel">Tapped Density</label>
+        <input type="text" id="tappedDensity" readonly>
+        <label for="bulkVolume" id="bulkVolumeLabel">Bulk Volume (cm³)</label>
+        <input type="text" id="bulkVolume" readonly>
+        <label for="tappedVolume" id="tappedVolumeLabel">Tapped Volume (cm³)</label>
+        <input type="text" id="tappedVolume" readonly>
+        <label for="tapCount" id="tapCountLabel">Number of Taps</label>
+        <input type="number" id="tapCount" min="1" max="1000" value="100">
+      </div>
+      <div class="simulation-area">
+        <div class="bg-text" id="bgText">
+          <div class="sample-name">
+            <h1>Calcium Carbonate (CaCO₃)</h1>
+          </div>
+          <img src="bottom machine.png" alt="Bulk Machine" class="bulk-machine" title="Bulk Density Tapping Machine">
+          <img src="weight machine.png" alt="Weighing Scale" class="weighing-scale" title="Digital Weighing Scale">
+          <img src="tapped chemical powder.png" alt="Chemical Powder" class="chemical-powder1" title="Chemical Powder in Test Tube 1">
+          <img src="tapped chemical powder.png" alt="Chemical Powder" class="chemical-powder2" title="Chemical Powder in Test Tube 2">
+          <img src="tapping equipment.png" class="tapping-equipment" alt="Tapping Equipment" title="Tapping Equipment for Test Tube 1">
+          <img src="tapping equipment.png" class="tapping-equipment" id="tapping-equipment2" alt="Tapping Equipment" title="Tapping Equipment for Test Tube 2">
+          <img src="test tube.png" class="test-tube" alt="Test Tube" title="Test Tube 1">
+          <img src="test tube.png" class="test-tube" alt="Test Tube" id="test-tube2" title="Test Tube 2">
+          <img src="chemical powder cap.png" class="chemical-powder-cap" alt="Powder Cap" title="Click to open the powder container cap">
+          <img src="calcium carbonate box.png" class="calcium-carbonate-box" alt="Chemical Powder Box" title="Chemical Powder Container">
+
+          <!-- Powder samples that will be collected -->
+          <div class="powder-samples-container">
+            <div class="powder-sample" id="powder-sample-1"></div>
+            <div class="powder-sample" id="powder-sample-2"></div>
+            <div class="powder-sample" id="powder-sample-3"></div>
+            <div class="powder-sample" id="powder-sample-4"></div>
+            <div class="powder-sample" id="powder-sample-5"></div>
+            <div class="powder-sample" id="powder-sample-6"></div>
+            <div class="powder-sample" id="powder-sample-7"></div>
+            <div class="powder-sample" id="powder-sample-8"></div>
+            <div class="powder-sample" id="powder-sample-9"></div>
+            <div class="powder-sample" id="powder-sample-10"></div>
+          </div>
+
+
+
+          <img src="chemical powder in spatula.png" class="chemical-powder-in-spatula" id="sample1" alt="">
+          <img src="chemical powder in spatula.png" class="chemical-powder-in-spatula" id="sample2" alt="">
+          <img src="chemical powder in spatula.png" class="chemical-powder-in-spatula" id="sample3" alt="">
+          <img src="chemical powder in spatula.png" class="chemical-powder-in-spatula" id="sample4" alt="">
+          <img src="chemical powder in spatula.png" class="chemical-powder-in-spatula" id="sample5" alt="">
+          <img src="chemical powder in spatula.png" class="chemical-powder-in-spatula" id="sample6" alt="">
+          <img src="chemical powder in spatula.png" class="chemical-powder-in-spatula" id="sample7" alt="">
+          <img src="chemical powder in spatula.png" class="chemical-powder-in-spatula" id="sample8" alt="">
+          <img src="chemical powder in spatula.png" class="chemical-powder-in-spatula" id="sample9" alt="">
+          <img src="chemical powder in spatula.png" class="chemical-powder-in-spatula" id="sample10" alt="">
+          <img src="chemical powder in spatula.png" class="chemical-powder-in-spatula" id="sample11" alt="">
+          <img src="chemical powder in spatula.png" class="chemical-powder-in-spatula" id="sample12" alt="">
+
+
+
+          <img class="spatchula" src="spatula.png" alt="Spatula" title="Click to collect powder sample with spatula">
+          <img src="petridish.png" class="petridish" alt="Petri Dish" title="Click to place petri dish on weighing scale">
+
+          <!-- Digital Display for Bulk Machine -->
+          <button id="startTappingBtn" class="start-tapping-btn" title="Click to start the tapping process">START</button>
+          <div class="bulk-machine-display" id="bulkMachineDisplay" title="Tap count display">0</div>
+
+
+            <button class="weighing-btn" id="onButton" title="Click to turn ON the weighing scale">ON</button>
+            <div class="weight-display" id="weightDisplay" title="Weight display in grams">0.00</div>
+            <button class="weighing-btn" id="tareButton" title="Click to tare (zero) the weighing scale">TARE</button>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Panel -->
+    <div class="bottom-panel">
+      <!-- Step counter removed - button moved to top panel -->
+    </div>
+
+    <!-- Hover Label for showing element names -->
+    <div id="hoverLabel" class="hover-label"></div>
+
+    <!-- Starting Popup Modal -->
+    <div class="start-popup" id="startPopup">
+      <div class="start-popup-content">
+        <h2>Simulation Settings</h2>
+        <div class="popup-item">
+          <label for="chemicalSelect">Chemical / Powder Selection:</label>
+          <select id="chemicalSelect" title="Select the chemical powder for the experiment">
+            <option value="calcium-carbonate">Calcium Carbonate (CaCO₃)</option>
+            <option value="talc">Talc</option>
+            <option value="lactose-monohydrate">Lactose Monohydrate</option>
+            <option value="magnesium-stearate">Magnesium Stearate</option>
+            <option value="microcrystalline-cellulose">Microcrystalline Cellulose (MCC)</option>
+            <option value="starch">Starch (maize/corn)</option>
+            <option value="dicalcium-phosphate">Dicalcium Phosphate</option>
+            <option value="citric-acid">Citric Acid (powdered)</option>
+            <option value="mannitol">Mannitol (crystalline)</option>
+            <option value="silica">Silica (colloidal)</option>
+          </select>
+        </div>
+        <div class="popup-item">
+          <label for="popupSampleWeight">Sample Weight (gm):</label>
+          <select id="popupSampleWeight" title="Select the sample weight in grams">
+            <option value="50">50</option>
+            <option value="100">100</option>
+            <option value="150">150</option>
+            <option value="200">200</option>
+            <option value="250">250</option>
+          </select>
+        </div>
+        <div class="popup-item">
+          <label for="popupTapCount">Number of Taps:</label>
+          <select id="popupTapCount" title="Select the number of taps for the tapping process">
+            <option value="10">10</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+            <option value="200">200</option>
+            <option value="500">500</option>
+            <option value="1000">1000</option>
+          </select>
+        </div>
+        <div class="popup-buttons">
+          <button id="startOkBtn" title="Click to confirm settings and start">OK</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Results will be displayed in the measurement panel -->
+
+    <!-- Audio element for instruction narration -->
+    <audio id="instructionAudio" preload="auto" style="display: none;" autoplay></audio>
+  </div>
+
+  <!-- JavaScript files -->
+  <script src="language.js"></script>
+  <script src="main.js"></script>
+  <script src="start-popup.js"></script>
+  <script src="tapping.js"></script>
+  <script src="json-results-handler.js"></script>
+  <script src="rotate-screen.js"></script>
+  <script src="hover-labels.js"></script>
 </body>
 </html>

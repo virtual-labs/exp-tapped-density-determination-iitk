@@ -2,35 +2,86 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "1. Bulk density of a powder is defined as:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Mass of powder divided by its tapped volume",
+        "b": "Mass of powder divided by its bulk volume including interparticle voids",
+        "c": "Mass of powder divided by true volume of solid particles",
+        "d": "Volume of powder divided by its weight"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Explanation",
+        "b": "Explanation",
+        "c": "Explanation",
+        "d": "Explanation"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "2. Tapped density is obtained by:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Pouring the powder freely into a cylinder",
+        "b": "Subjecting the powder to standardized mechanical tapping",
+        "c": "Compressing the powder under high pressure",
+        "d": "Heating the powder to remove air gaps"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Explanation",
+        "b": "Explanation",
+        "c": "Explanation",
+        "d": "Explanation"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. The ratio of tapped density to bulk density is known as:",
+      "answers": {
+        "a": "Carr’s Index",
+        "b": "Hausner Ratio",
+        "c": "Compressibility Index",
+        "d": "Flowability Coefficient"
+      },
+      "explanations": {
+        "a": "Explanation",
+        "b": "Explanation",
+        "c": "Explanation",
+        "d": "Explanation"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4.  Lower Hausner ratio and Carr’s index values indicate:",
+      "answers": {
+        "a": "Poor flow",
+        "b": "Better flow properties",
+        "c": "No relation to flow",
+        "d": "Higher moisture content"
+      },
+      "explanations": {
+        "a": "Explanation",
+        "b": "Explanation",
+        "c": "Explanation",
+        "d": "Explanation"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+      {
+      "question": "5. The digital bulk density apparatus is used to:",
+      "answers": {
+        "a": "Measure the particle size",
+        "b": "Measure powder color",
+        "c": "Determine bulk and tapped densities of powders",
+        "d": "Determine true density of solids"
+      },
+      "explanations": {
+        "a": "Explanation",
+        "b": "Explanation",
+        "c": "Explanation",
+        "d": "Explanation"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
