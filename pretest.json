@@ -1,0 +1,65 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Bulk density of a powder is defined as:",
+      "answers": {
+        "a": "Mass of powder divided by its tapped volume",
+        "b": "Mass of powder divided by its bulk volume including interparticle voids",
+        "c": "Mass of powder divided by true volume of solid particles",
+        "d": "Volume of powder divided by its weight"
+      },
+    
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Tapped density is obtained by:",
+      "answers": {
+        "a": "Pouring the powder freely into a cylinder",
+        "b": "Subjecting the powder to standardized mechanical tapping",
+        "c": "Compressing the powder under high pressure",
+        "d": "Heating the powder to remove air gaps"
+      },
+
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. The ratio of tapped density to bulk density is known as:",
+      "answers": {
+        "a": "Carr’s Index",
+        "b": "Hausner Ratio",
+        "c": "Compressibility Index",
+        "d": "Flowability Coefficient"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4.  Lower Hausner ratio and Carr’s index values indicate:",
+      "answers": {
+        "a": "Poor flow",
+        "b": "Better flow properties",
+        "c": "No relation to flow",
+        "d": "Higher moisture content"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+      {
+      "question": "5. The digital bulk density apparatus is used to:",
+      "answers": {
+        "a": "Measure the particle size",
+        "b": "Measure powder color",
+        "c": "Determine bulk and tapped densities of powders",
+        "d": "Determine true density of solids"
+      },
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+  ]
+}

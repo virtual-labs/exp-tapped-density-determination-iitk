@@ -1,0 +1,65 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. The formula for Carr’s Index (CI) is:",
+      "answers": {
+        "a": "(Tapped Density / Bulk Density) × 100",
+        "b": "(Bulk Density / Tapped Density) × 100",
+        "c": "[(Tapped Density – Bulk Density) / Tapped Density] × 100",
+        "d": "[(Bulk Density – Tapped Density) / Bulk Density] × 100"
+      },
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+       {
+      "question": "2. If Hausner Ratio > 1.25, it indicates:",
+      "answers": {
+        "a": "Poor flowability of the powder",
+        "b": "Excellent flowability",
+        "c": "Uniform particle size",
+        "d": "Low compressibility"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+        {
+      "question": "3. When the difference between two consecutive tapped volumes is less than 2%:",
+      "answers": {
+        "a": "Tapping should continue",
+        "b": "Tapping can be stopped as constant volume is achieved",
+        "c": "Sample should be replaced",
+        "d": "Cylinder should be refilled"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+        {
+      "question": "4. A powder has a bulk density of 0.5 g/mL and tapped density of 0.65 g/mL. Its Hausner Ratio is:",
+      "answers": {
+        "a": "1.15",
+        "b": "1.30",
+        "c": "0.77",
+        "d": "1.50"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+        {
+      "question": "5. One of the major factors affecting bulk and tapped density results is:",
+      "answers": {
+        "a": "Color of the powder",
+        "b": "Particle size and shape",
+        "c": "Odor of the powder",
+        "d": "Storage container material"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
