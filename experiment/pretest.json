@@ -9,12 +9,7 @@
         "c": "Mass of powder divided by true volume of solid particles",
         "d": "Volume of powder divided by its weight"
       },
-      "explanations": {
-        "a": "Explanation",
-        "b": "Explanation",
-        "c": "Explanation",
-        "d": "Explanation"
-      },
+    
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
@@ -26,12 +21,7 @@
         "c": "Compressing the powder under high pressure",
         "d": "Heating the powder to remove air gaps"
       },
-      "explanations": {
-        "a": "Explanation",
-        "b": "Explanation",
-        "c": "Explanation",
-        "d": "Explanation"
-      },
+
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
@@ -43,12 +33,7 @@
         "c": "Compressibility Index",
         "d": "Flowability Coefficient"
       },
-      "explanations": {
-        "a": "Explanation",
-        "b": "Explanation",
-        "c": "Explanation",
-        "d": "Explanation"
-      },
+      
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
@@ -60,12 +45,7 @@
         "c": "No relation to flow",
         "d": "Higher moisture content"
       },
-      "explanations": {
-        "a": "Explanation",
-        "b": "Explanation",
-        "c": "Explanation",
-        "d": "Explanation"
-      },
+      
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
@@ -77,12 +57,7 @@
         "c": "Determine bulk and tapped densities of powders",
         "d": "Determine true density of solids"
       },
-      "explanations": {
-        "a": "Explanation",
-        "b": "Explanation",
-        "c": "Explanation",
-        "d": "Explanation"
-      },
+      
       "correctAnswer": "c",
       "difficulty": "beginner"
     }
